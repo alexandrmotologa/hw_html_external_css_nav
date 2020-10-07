@@ -1,0 +1,57 @@
+body{
+    background-color: #333;
+}
+
+nav.accordion{
+    background-color: #555;
+    float: left;
+    user-select: none;
+    cursor: pointer;
+}
+
+nav.accordion h2{
+    background-color: #999;
+    color: darkorange;
+    padding: 10px 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+nav.accordion h2:hover{
+    color: #ff5a00;
+}
+
+nav.accordion ol{
+    height: 0;
+    overflow: hidden;
+}
+
+nav.accordion ol li:hover::before{
+    content: "\00BB   ";
+    color: #20abe1;
+}
+
+nav.accordion>ul>li:hover>ol{
+    height: auto;
+}
+
+nav.accordion ol li{
+    color: #ccc;
+    padding: 5px 30px;
+    text-shadow: 
+        0.5px 0.5px 1px #333,
+        -0.5px -0.5px 1px #999;
+}
+
+nav.accordion ol li:hover{
+    background-color: #666;
+    color: #20aaf9;
+    font-size: 15px;
+}
+
+nav.accordion ol li:first-child{
+    margin-top: 10px;
+}
+
+nav.accordion ol li:last-child{
+    margin-bottom: 10px;
+}
